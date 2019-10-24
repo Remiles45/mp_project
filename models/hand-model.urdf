@@ -37,14 +37,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="-0.0 -0.0425 -0.0425"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/mounts/allegro_mount.stl"/>
+        <mesh filename="../models/allegro_model/allegro_mount.stl"/>
       </geometry>
       <material name="Grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="-0.0 -0.0425 -0.0425"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/mounts/allegro_mount.stl"/>
+        <mesh filename="../models/allegro_model/allegro_mount.stl"/>
       </geometry>
     </collision>
   </link>
@@ -64,14 +64,14 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/base_link_biotac.stl"/>
+        <mesh filename="../models/allegro_model/base_link_biotac.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0 "/>
       <material name="Black"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/collision/base_link_biotac.stl"/>
+        <mesh filename="../models/allegro_model/collision/base_link_biotac.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 0 "/>
     </collision>
@@ -87,13 +87,13 @@
   <link name="index_link_0">
     <visual>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/link_0.0.stl"/>
+        <mesh filename="../models/allegro_model/link_0.0.stl"/>
       </geometry>
       <material name="Black"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/collision/link_0.0.stl"/>
+        <mesh filename="../models/allegro_model/collision/link_0.0.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -117,13 +117,13 @@
   <link name="index_link_1">
     <visual>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/link_1.0.stl"/>
+        <mesh filename="../models/allegro_model/allegro/link_1.0.stl"/>
       </geometry>
       <material name="Black"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/collision/link_1.0.stl"/>
+        <mesh filename="../models/allegro_model/collision/link_1.0.stl"/>
       </geometry>
       <!--geometry>
         <box size="0.0196 0.0275 0.054"/>
@@ -151,13 +151,13 @@
   <link name="index_link_2">
     <visual>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/link_2.0.stl"/>
+        <mesh filename="../models/allegro_model/link_2.0.stl"/>
       </geometry>
       <material name="Black"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/collision/link_2.0.stl"/>
+        <mesh filename="../models/allegro_model/collision/link_2.0.stl"/>
       </geometry>
       <!--geometry>
         <box size="0.0196 0.0275 0.0384"/>
@@ -185,13 +185,13 @@
   <link name="index_link_3">
     <visual>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/link_3.0.stl"/>
+        <mesh filename="../models/allegro_model/link_3.0.stl"/>
       </geometry>
       <material name="Black"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/collision/link_3.0.stl"/>
+        <mesh filename="../models/allegro_model/collision/link_3.0.stl"/>
       </geometry>
       <!--geometry>
         <box size="0.0196 0.0275 0.0267"/>
@@ -219,13 +219,13 @@
   <link name="middle_link_0">
     <visual>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/link_0.0.stl"/>
+        <mesh filename="../models/allegro_model/link_0.0.stl"/>
       </geometry>
       <material name="Black"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/collision/link_0.0.stl"/>
+        <mesh filename="../models/allegro_model/collision/link_0.0.stl"/>
       </geometry>
       <!--geometry>
         <box size="0.0196 0.0275 0.0164"/>
@@ -253,13 +253,13 @@
   <link name="middle_link_1">
     <visual>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/link_1.0.stl"/>
+        <mesh filename="../models/allegro_model/link_1.0.stl"/>
       </geometry>
       <material name="Black"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/collision/link_1.0.stl"/>
+        <mesh filename="../models/allegro_model/collision/link_1.0.stl"/>
       </geometry>
       <!--geometry>
         <box size="0.0196 0.0275 0.054"/>
@@ -287,13 +287,13 @@
   <link name="middle_link_2">
     <visual>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/link_2.0.stl"/>
+        <mesh filename="../models/allegro_model/link_2.0.stl"/>
       </geometry>
       <material name="Black"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/collision/link_2.0.stl"/>
+        <mesh filename="../models/allegro_model/collision/link_2.0.stl"/>
       </geometry>
       <!--geometry>
         <box size="0.0196 0.0275 0.0384"/>
@@ -321,13 +321,13 @@
   <link name="middle_link_3">
     <visual>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/link_3.0.stl"/>
+        <mesh filename="../models/allegro_model/link_3.0.stl"/>
       </geometry>
       <material name="Black"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/collision/link_3.0.stl"/>
+        <mesh filename="../models/allegro_model/collision/link_3.0.stl"/>
       </geometry>
       <!--geometry>
         <box size="0.0196 0.0275 0.0267"/>
@@ -355,13 +355,13 @@
   <link name="ring_link_0">
     <visual>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/link_0.0.stl"/>
+        <mesh filename="../models/allegro_model/link_0.0.stl"/>
       </geometry>
       <material name="Black"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/collision/link_0.0.stl"/>
+        <mesh filename="../models/allegro_model/collision/link_0.0.stl"/>
       </geometry>
       <!--geometry>
         <box size="0.0196 0.0275 0.0164"/>
@@ -389,13 +389,13 @@
   <link name="ring_link_1">
     <visual>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/link_1.0.stl"/>
+        <mesh filename="../models/allegro_model/link_1.0.stl"/>
       </geometry>
       <material name="Black"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/collision/link_1.0.stl"/>
+        <mesh filename="../models/allegro_model/collision/link_1.0.stl"/>
       </geometry>
       <!--geometry>
         <box size="0.0196 0.0275 0.054"/>
@@ -423,13 +423,13 @@
   <link name="ring_link_2">
     <visual>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/link_2.0.stl"/>
+        <mesh filename="../models/allegro_model/link_2.0.stl"/>
       </geometry>
       <material name="Black"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/collision/link_2.0.stl"/>
+        <mesh filename="../models/allegro_model/collision/link_2.0.stl"/>
       </geometry>
       <!--geometry>
         <box size="0.0196 0.0275 0.0384"/>
@@ -457,13 +457,13 @@
   <link name="ring_link_3">
     <visual>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/link_3.0.stl"/>
+        <mesh filename="../models/allegro_model/link_3.0.stl"/>
       </geometry>
       <material name="Black"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/collision/link_3.0.stl"/>
+        <mesh filename="../models/allegro_model/collision/link_3.0.stl"/>
       </geometry>
       <!--geometry>
 
@@ -493,13 +493,13 @@
   <link name="thumb_link_0">
     <visual>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/link_12.0_right.stl"/>
+        <mesh filename="../models/allegro_model/link_12.0_right.stl"/>
       </geometry>
       <material name="Black"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/collision/link_12.0_right.stl"/>
+        <mesh filename="../models/allegro_model/collision/link_12.0_right.stl"/>
       </geometry>
       <!--geometry>
         <box size="0.0358 0.034 0.0455"/>
@@ -528,13 +528,13 @@
   <link name="thumb_link_1">
     <visual>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/link_13.0.stl"/>
+        <mesh filename="../models/allegro_model/link_13.0.stl"/>
       </geometry>
       <material name="Black"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/collision/link_13.0.stl"/>
+        <mesh filename="../models/allegro_model/collision/link_13.0.stl"/>
       </geometry>
       <!--geometry>
         <box size="0.0196 0.0275 0.0177"/>
@@ -562,14 +562,14 @@
   <link name="thumb_link_2">
     <visual>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/link_14.0.stl"/>
+        <mesh filename="../models/allegro_model/link_14.0.stl"/>
       </geometry>
       <material name="Black">
       </material>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/collision/link_14.0.stl"/>
+        <mesh filename="../models/allegro_model/collision/link_14.0.stl"/>
       </geometry>
       <!--geometry>
         <box size="0.0196 0.0275 0.0514"/>
@@ -597,7 +597,7 @@
   <link name="thumb_link_3">
     <visual>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/link_15.0.stl"/>
+        <mesh filename="../models/allegro_model/link_15.0.stl"/>
       </geometry>
       <material name="Black">
       </material>
@@ -605,7 +605,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/allegro/collision/link_15.0.stl"/>
+        <mesh filename="../models/allegro_model/collision/link_15.0.stl"/>
       </geometry>
       <origin rpy="0 0 0" xyz="0 0 -0.0"/>
       <!--geometry>
@@ -670,7 +670,7 @@
       <!--origin rpy="0.1 0 1.57" xyz="0.0102 -0.01  -0.055" /-->
       <origin rpy="0.0 1.57 1.57" xyz="-0.00277 0.0  -0.00545"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/base_visual.stl"/>
+        <mesh filename="../models/allegro_model/biotac/base_visual.stl"/>
       </geometry>
       <material name="Grey">
         <color rgba="0.2 0.2 0.2 1"/>
@@ -679,7 +679,7 @@
     <collision>
       <origin rpy="0.0 1.57 1.57" xyz="-0.00277 0.0  -0.00545"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/base_collision.stl"/>
+        <mesh filename="../models/allegro_model/biotac/base_collision.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -697,7 +697,7 @@
     <visual>
       <origin rpy="0 0 0.0" xyz="0.00 -0.00  -0.0"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/nail_visual.stl"/>
+        <mesh filename="../models/allegro_model/biotac/nail_visual.stl"/>
       </geometry>
       <material name="White">
         <color rgba="1 1 1 1"/>
@@ -706,7 +706,7 @@
     <collision>
       <origin rpy="0 0 0.0" xyz="0.00 -0.00  -0.0"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/nail_collision.stl"/>
+        <mesh filename="../models/allegro_model/biotac/nail_collision.stl"/>
       </geometry>
       <material name="White">
         <color rgba="1.0 1.0 1.0 1"/>
@@ -728,7 +728,7 @@
     <visual>
       <origin rpy="1.57 0.351 3.141" xyz="-0.021 -0.002  -0.004"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/contact_visual.stl"/>
+        <mesh filename="../models/allegro_model/biotac/contact_visual.stl"/>
       </geometry>
       <material name="Green">
         <color rgba="0.0 0.8 .0 1"/>
@@ -737,7 +737,7 @@
     <collision>
       <origin rpy="1.57 0.351 3.141" xyz="-0.021 -0.002  -0.004"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/contact_collision_small.stl"/>
+        <mesh filename="../models/allegro_model/biotac/contact_collision_small.stl"/>
       </geometry>
       <material name="Green">
         <color rgba="0.0 0.8 .0 1"/>
@@ -773,7 +773,7 @@
       <!--origin rpy="0.1 0 1.57" xyz="0.0102 -0.01  -0.055" /-->
       <origin rpy="0.0 1.57 1.57" xyz="-0.00277 0.0  -0.00545"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/base_visual.stl"/>
+        <mesh filename="../models/allegro_model/biotac/base_visual.stl"/>
       </geometry>
       <material name="Grey">
         <color rgba="0.2 0.2 0.2 1"/>
@@ -782,7 +782,7 @@
     <collision>
       <origin rpy="0.0 1.57 1.57" xyz="-0.00277 0.0  -0.00545"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/base_collision.stl"/>
+        <mesh filename="../models/allegro_model/biotac/base_collision.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -800,7 +800,7 @@
     <visual>
       <origin rpy="0 0 0.0" xyz="0.00 -0.00  -0.0"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/nail_visual.stl"/>
+        <mesh filename="../models/allegro_model/biotac/nail_visual.stl"/>
       </geometry>
       <material name="White">
         <color rgba="1 1 1 1"/>
@@ -809,7 +809,7 @@
     <collision>
       <origin rpy="0 0 0.0" xyz="0.00 -0.00  -0.0"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/nail_collision.stl"/>
+        <mesh filename="../models/allegro_model/biotac/nail_collision.stl"/>
       </geometry>
       <material name="White">
         <color rgba="1.0 1.0 1.0 1"/>
@@ -831,7 +831,7 @@
     <visual>
       <origin rpy="1.57 0.351 3.141" xyz="-0.021 -0.002  -0.004"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/contact_visual.stl"/>
+        <mesh filename="../models/allegro_model/biotac/contact_visual.stl"/>
       </geometry>
       <material name="Green">
         <color rgba="0.0 0.8 .0 1"/>
@@ -840,7 +840,7 @@
     <collision>
       <origin rpy="1.57 0.351 3.141" xyz="-0.021 -0.002  -0.004"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/contact_collision_small.stl"/>
+        <mesh filename="../models/allegro_model/biotac/contact_collision_small.stl"/>
       </geometry>
       <material name="Green">
         <color rgba="0.0 0.8 .0 1"/>
@@ -876,7 +876,7 @@
       <!--origin rpy="0.1 0 1.57" xyz="0.0102 -0.01  -0.055" /-->
       <origin rpy="0.0 1.57 1.57" xyz="-0.00277 0.0  -0.00545"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/base_visual.stl"/>
+        <mesh filename="../models/allegro_model/biotac/base_visual.stl"/>
       </geometry>
       <material name="Grey">
         <color rgba="0.2 0.2 0.2 1"/>
@@ -885,7 +885,7 @@
     <collision>
       <origin rpy="0.0 1.57 1.57" xyz="-0.00277 0.0  -0.00545"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/base_collision.stl"/>
+        <mesh filename="../models/allegro_model/biotac/base_collision.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -903,7 +903,7 @@
     <visual>
       <origin rpy="0 0 0.0" xyz="0.00 -0.00  -0.0"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/nail_visual.stl"/>
+        <mesh filename="../models/allegro_model/biotac/nail_visual.stl"/>
       </geometry>
       <material name="White">
         <color rgba="1 1 1 1"/>
@@ -912,7 +912,7 @@
     <collision>
       <origin rpy="0 0 0.0" xyz="0.00 -0.00  -0.0"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/nail_collision.stl"/>
+        <mesh filename="../models/allegro_model/biotac/nail_collision.stl"/>
       </geometry>
       <material name="White">
         <color rgba="1.0 1.0 1.0 1"/>
@@ -934,7 +934,7 @@
     <visual>
       <origin rpy="1.57 0.351 3.141" xyz="-0.021 -0.002  -0.004"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/contact_visual.stl"/>
+        <mesh filename="../models/allegro_model/biotac/contact_visual.stl"/>
       </geometry>
       <material name="Green">
         <color rgba="0.0 0.8 .0 1"/>
@@ -943,7 +943,7 @@
     <collision>
       <origin rpy="1.57 0.351 3.141" xyz="-0.021 -0.002  -0.004"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/contact_collision_small.stl"/>
+        <mesh filename="../models/allegro_model/biotac/contact_collision_small.stl"/>
       </geometry>
       <material name="Green">
         <color rgba="0.0 0.8 .0 1"/>
@@ -979,7 +979,7 @@
       <!--origin rpy="0.1 0 1.57" xyz="0.0102 -0.01  -0.055" /-->
       <origin rpy="0.0 1.57 1.57" xyz="-0.00277 0.0  -0.00545"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/base_visual.stl"/>
+        <mesh filename="../models/allegro_model/biotac/base_visual.stl"/>
       </geometry>
       <material name="Grey">
         <color rgba="0.2 0.2 0.2 1"/>
@@ -988,7 +988,7 @@
     <collision>
       <origin rpy="0.0 1.57 1.57" xyz="-0.00277 0.0  -0.00545"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/base_collision.stl"/>
+        <mesh filename="../models/allegro_model/biotac/base_collision.stl"/>
       </geometry>
     </collision>
     <inertial>
@@ -1006,7 +1006,7 @@
     <visual>
       <origin rpy="0 0 0.0" xyz="0.00 -0.00  -0.0"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/nail_visual.stl"/>
+        <mesh filename="../models/allegro_model/biotac/nail_visual.stl"/>
       </geometry>
       <material name="White">
         <color rgba="1 1 1 1"/>
@@ -1015,7 +1015,7 @@
     <collision>
       <origin rpy="0 0 0.0" xyz="0.00 -0.00  -0.0"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/nail_collision.stl"/>
+        <mesh filename="../models/allegro_model/biotac/nail_collision.stl"/>
       </geometry>
       <material name="White">
         <color rgba="1.0 1.0 1.0 1"/>
@@ -1037,7 +1037,7 @@
     <visual>
       <origin rpy="1.57 0.351 3.141" xyz="-0.021 -0.002  -0.004"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/contact_visual.stl"/>
+        <mesh filename="../models/allegro_model/biotac/contact_visual.stl"/>
       </geometry>
       <material name="Green">
         <color rgba="0.0 0.8 .0 1"/>
@@ -1046,7 +1046,7 @@
     <collision>
       <origin rpy="1.57 0.351 3.141" xyz="-0.021 -0.002  -0.004"/>
       <geometry>
-        <mesh filename="package://ll4ma_robots_description/meshes/biotac/contact_collision_small.stl"/>
+        <mesh filename="../models/allegro_model/biotac/contact_collision_small.stl"/>
       </geometry>
       <material name="Green">
         <color rgba="0.0 0.8 .0 1"/>

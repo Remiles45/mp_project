@@ -7,7 +7,7 @@
 //===========================================================================
 
 void tutorialBasics(){
-  rai::KinematicWorld G("model.g");
+  rai::KinematicWorld G("hand_model.g");
 
   KOMO komo;
   /* there are essentially three things that KOMO needs to be specified:
@@ -109,7 +109,7 @@ int main(int argc,char** argv){
 
   tutorialBasics();
 
-  tutorialInverseKinematics();
+  //tutorialInverseKinematics();
 
   return 0;
 }

@@ -2,7 +2,7 @@
 
 from lxml import etree
 
-inFile = "hand-model.urdf"#"allegro_virtual.robot.xacro"#"z.urdf"
+inFile = "models/hand-model.urdf"#"allegro_virtual.robot.xacro"#"z.urdf"
 xmlData = etree.parse(inFile)
 gfile = open("hand_model.g","w+")
 def writeShape(link):
