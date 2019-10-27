@@ -15,7 +15,7 @@ shape collision index_link_0_0 (index_link_0) {
    color=[.8 .2 .2 .5],type=ST_mesh mesh='../models/allegro_model/collision/link_0.0.stl' contact }
 body index_link_1 {mass=0.065inertiaTensor=[7.95654166667e-05 1.7199e-05 8.75875e-06 2.47088833333e-05 2.413125e-05 7.95654166667e-05]}
 shape visual index_link_1_1 (index_link_1) {
-  type=ST_mesh mesh='../models/allegro_model/allegro/link_1.0.stl'colorName=Black}
+  type=ST_mesh mesh='../models/allegro_model/link_1.0.stl'colorName=Black}
 shape collision index_link_1_0 (index_link_1) {
    color=[.8 .2 .2 .5],type=ST_mesh mesh='../models/allegro_model/collision/link_1.0.stl' contact }
 body index_link_2 {mass=0.0355inertiaTensor=[2.63979183333e-05 6.67968e-06 4.783625e-06 1.34948516667e-05 9.372e-06 2.63979183333e-05]}

@@ -117,7 +117,7 @@
   <link name="index_link_1">
     <visual>
       <geometry>
-        <mesh filename="../models/allegro_model/allegro/link_1.0.stl"/>
+        <mesh filename="../models/allegro_model/link_1.0.stl"/>
       </geometry>
       <material name="Black"/>
     </visual>

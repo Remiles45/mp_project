@@ -11,88 +11,70 @@ util.cpp:getIs:1132(3) opening input file `../models/allegro_model/base_link_bio
 
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/base_link_biotac.stl'
 
-util.cpp:getIs:1133(-1) could not open file `../models/allegro_model/collision/base_link_biotac.stl' for input
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_0.0.stl'
 
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/link_0.0.stl'
 
-util.cpp:getIs:1133(-1) could not open file `../models/allegro_model/collision/link_0.0.stl' for input
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/allegro/link_1.0.stl'
-
-util.cpp:getIs:1133(-1) could not open file `../models/allegro_model/allegro/link_1.0.stl' for input
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/link_1.0.stl'
-
-util.cpp:getIs:1133(-1) could not open file `../models/allegro_model/collision/link_1.0.stl' for input
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_2.0.stl'
-
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/link_2.0.stl'
-
-util.cpp:getIs:1133(-1) could not open file `../models/allegro_model/collision/link_2.0.stl' for input
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_3.0.stl'
-
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/link_3.0.stl'
-
-util.cpp:getIs:1133(-1) could not open file `../models/allegro_model/collision/link_3.0.stl' for input
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_0.0.stl'
-
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/link_0.0.stl'
-
-util.cpp:getIs:1133(-1) could not open file `../models/allegro_model/collision/link_0.0.stl' for input
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_1.0.stl'
 
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/link_1.0.stl'
 
-util.cpp:getIs:1133(-1) could not open file `../models/allegro_model/collision/link_1.0.stl' for input
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_2.0.stl'
 
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/link_2.0.stl'
 
-util.cpp:getIs:1133(-1) could not open file `../models/allegro_model/collision/link_2.0.stl' for input
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_3.0.stl'
 
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/link_3.0.stl'
 
-util.cpp:getIs:1133(-1) could not open file `../models/allegro_model/collision/link_3.0.stl' for input
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_0.0.stl'
 
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/link_0.0.stl'
 
-util.cpp:getIs:1133(-1) could not open file `../models/allegro_model/collision/link_0.0.stl' for input
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_1.0.stl'
 
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/link_1.0.stl'
 
-util.cpp:getIs:1133(-1) could not open file `../models/allegro_model/collision/link_1.0.stl' for input
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_2.0.stl'
 
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/link_2.0.stl'
 
-util.cpp:getIs:1133(-1) could not open file `../models/allegro_model/collision/link_2.0.stl' for input
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_3.0.stl'
 
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/link_3.0.stl'
 
-util.cpp:getIs:1133(-1) could not open file `../models/allegro_model/collision/link_3.0.stl' for input
+util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_0.0.stl'
+
+util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/link_0.0.stl'
+
+util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_1.0.stl'
+
+util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/link_1.0.stl'
+
+util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_2.0.stl'
+
+util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/link_2.0.stl'
+
+util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_3.0.stl'
+
+util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/link_3.0.stl'
+
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_12.0_right.stl'
 
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/link_12.0_right.stl'
 
-util.cpp:getIs:1133(-1) could not open file `../models/allegro_model/collision/link_12.0_right.stl' for input
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_13.0.stl'
 
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/link_13.0.stl'
 
-util.cpp:getIs:1133(-1) could not open file `../models/allegro_model/collision/link_13.0.stl' for input
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_14.0.stl'
 
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/link_14.0.stl'
 
-util.cpp:getIs:1133(-1) could not open file `../models/allegro_model/collision/link_14.0.stl' for input
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_15.0.stl'
 
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/collision/link_15.0.stl'
 
-util.cpp:getIs:1133(-1) could not open file `../models/allegro_model/collision/link_15.0.stl' for input
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/biotac/base_visual.stl'
 
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/biotac/base_collision.stl'

@@ -2,13 +2,10 @@
 #include <Gui/opengl.h>
 #include <KOMO/komo.h>
 #include <Kin/taskMaps.h>
-
-
 //===========================================================================
 
 void tutorialBasics(){
   rai::KinematicWorld G("hand_model.g");
-
   KOMO komo;
   /* there are essentially three things that KOMO needs to be specified:
    * 1) the kinematic model
