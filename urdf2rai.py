@@ -27,7 +27,7 @@ def writeShape(link):
 
     elem = link.find("geometry/mesh")
     if elem is not None:
-        gfile.write ('type=ST_mesh mesh=\'%s\'' % elem.attrib['filename'],)
+        gfile.write ('type=mesh mesh=\'%s\'' % elem.attrib['filename'],)
         if elem.find("scale") is not None:
             gfile.write( 'meshscale=[%s] ' % elem.attrib['scale'],)
 
@@ -87,11 +87,11 @@ for joint in joints:
         # figure out joint type
         att = joint.attrib.get('type')
         if att in ["revolute", "continuous"]:
-            gfile.write ('type=JT_hingeX',)
+            gfile.write ('type=hingeX ',)
         if att == "prismatic":
-            gfile.write ('type=JT_transX',)
+            gfile.write ('type=transX ',)
         if att == "fixed":
-            gfile.write ('type=JT_rigid',)
+            gfile.write ('type=rigid ',)
 
         elem = joint.find("mimic")
         if elem is not None:
