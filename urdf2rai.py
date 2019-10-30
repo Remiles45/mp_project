@@ -15,30 +15,30 @@ def writeShape(link):
 
     elem = link.find("geometry/box")
     if elem is not None:
-        gfile.write ('type=ST_box size=[%s 0]' % elem.attrib['size'],)
+        gfile.write ('type=ST_box size=[%s 0] ' % elem.attrib['size'],)
 
     elem = link.find("geometry/sphere")
     if elem is not None:
-        gfile.write ('type=ST_sphere size=[0 0 0 %s]' % elem.attrib['radius'],)
+        gfile.write ('type=ST_sphere size=[0 0 0 %s] ' % elem.attrib['radius'],)
 
     elem = link.find("geometry/cylinder")
     if elem is not None:
-        gfile.write ('type=ST_cylinder size=[0 0 %s %s]' % (elem.attrib['length'], elem.attrib['radius']),)
+        gfile.write ('type=ST_cylinder size=[0 0 %s %s] ' % (elem.attrib['length'], elem.attrib['radius']),)
 
     elem = link.find("geometry/mesh")
     if elem is not None:
         gfile.write ('type=ST_mesh mesh=\'%s\'' % elem.attrib['filename'],)
         if elem.find("scale") is not None:
-            gfile.write( 'meshscale=[%s]' % elem.attrib['scale'],)
+            gfile.write( 'meshscale=[%s] ' % elem.attrib['scale'],)
 
     elem = link.find("material/color")
     if elem is not None:
-        gfile.write ('color=[%s]' % elem.attrib['rgba'],)
+        gfile.write ('color=[%s] ' % elem.attrib['rgba'],)
 
     elem = link.find("material")
     if elem is not None:
         if elem.attrib['name'] is not None:
-            gfile.write ('colorName=%s' % elem.attrib['name'],)
+            gfile.write ('colorName=%s ' % elem.attrib['name'],)
 
 
 links = xmlData.findall("/link")
@@ -48,11 +48,11 @@ for link in links:
 
     elem = link.find("inertial/mass")
     if elem is not None:
-        gfile.write ('mass=%s' % elem.attrib['value'],)
+        gfile.write ('mass=%s ' % elem.attrib['value'],)
 
     elem = link.find("inertial/inertia")
     if elem is not None:
-        gfile.write ('inertiaTensor=[%s %s %s %s %s %s]' % (
+        gfile.write ('inertiaTensor=[%s %s %s %s %s %s] ' % (
             elem.attrib['ixx'],
             elem.attrib['ixy'],
             elem.attrib['ixz'],
@@ -60,18 +60,18 @@ for link in links:
             elem.attrib['iyz'],
             elem.attrib['izz']),)
 
-    gfile.write ('}\n',) # end of body
+    gfile.write ('}\n\n',) # end of body
 
     # visual shape
     for visual in link.findall("visual"):
         gfile.write ('shape visual %s_1 (%s) {\n  ' % (name, name),)
         writeShape(visual)
-        gfile.write ('}\n',) # end of shape
+        gfile.write ('}\n\n',) # end of shape
 
     # collision shape
     for collision in link.findall("collision"):
         gfile.write ('shape collision %s_0 (%s) {\n  ' % (name, name),)
-        gfile.write (' color=[.8 .2 .2 .5],',)
+        gfile.write (' color=[.8 .2 .2 .5], ',)
         writeShape(collision)
         gfile.write (' contact }\n',) # end of shape
 
@@ -105,9 +105,9 @@ for joint in joints:
         if elem is not None:
             att = elem.attrib.get('rpy')
             if att is not None:
-                gfile.write ('A=<T t(%s) E(%s)>' % (elem.attrib['xyz'], att),)
+                gfile.write (' A=<T t(%s) E(%s)>' % (elem.attrib['xyz'], att),)
             else:
-                gfile.write ('A=<T t(%s)>' % (elem.attrib['xyz']),)
+                gfile.write (' A=<T t(%s)>' % (elem.attrib['xyz']),)
 
         elem = joint.find("safety_controller")
         if elem is not None:

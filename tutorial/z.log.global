@@ -123,4 +123,4 @@ util.cpp:getIs:1132(3) opening input file `../models/allegro_model/biotac/contac
 
 util.cpp:getIs:1132(3) opening input file `../models/allegro_model/biotac/contact_collision_small.stl'
 
-../../rai/Core/util.h:read:458(-2) Enum::read could not find the keyword 'ST_mesh'. Possible Enum keywords: box sphere capsule mesh cylinder marker SSBox pointCloud ssCvx ssBox 
+../../rai/Core/util.h:read:458(-2) Enum::read could not find the keyword 'JT_rigid'. Possible Enum keywords: hingeX hingeY hingeZ transX transY transZ transXY trans3 transXYPhi universal rigid quatBall phiTransXY XBall free time 
