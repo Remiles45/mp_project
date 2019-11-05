@@ -2,10 +2,13 @@
 #include <Gui/opengl.h>
 #include <KOMO/komo.h>
 #include <Kin/taskMaps.h>
+
+
 //===========================================================================
 
 void tutorialBasics(){
   rai::KinematicWorld G("hand_model.g");
+
   KOMO komo;
   /* there are essentially three things that KOMO needs to be specified:
    * 1) the kinematic model
@@ -74,7 +77,7 @@ void tutorialInverseKinematics(){
    * All tasks should refer to phase-time 1. Internally, the system still created a banded-diagonal
    * Hessian representation, which is some overhead. It then calles exactly the same constrained optimizers */
 
-  rai::KinematicWorld G("model.g");
+  rai::KinematicWorld G("hand_model.g");
 
   KOMO komo;
   komo.setModel(G, false);
@@ -87,9 +90,9 @@ void tutorialInverseKinematics(){
   komo.setSquaredQuaternionNorms(-1., -1., 1e3); //when the kinematics includes quaternion joints, keep them roughly regularized
 
   //-- simple tasks, called low-level
-  komo.setTask(1., -1., new TM_Default(TMT_posDiff, komo.world, "endeff", NoVector, "target", NoVector));
-  komo.setTask(1., -1., new TM_Default(TMT_quatDiff, komo.world, "endeff", NoVector,
-                                            "target", NoVector));
+  //komo.setTask(1., -1., new TM_Default(TMT_posDiff, komo.world, "endeff", NoVector, "target", NoVector));
+  //komo.setTask(1., -1., new TM_Default(TMT_quatDiff, komo.world, "endeff", NoVector,
+  //                                          "target", NoVector));
 
   //-- call the optimizer
   komo.reset();
@@ -103,10 +106,9 @@ void tutorialInverseKinematics(){
 
 int main(int argc,char** argv){
   rai::initCmdLine(argc,argv);
-
   tutorialBasics();
 
-  //tutorialInverseKinematics();
+  tutorialInverseKinematics();
 
   return 0;
 }

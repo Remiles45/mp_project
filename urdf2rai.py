@@ -131,3 +131,4 @@ for joint in joints:
 
 #print(etree.tostring(links[22]))
 #print(etree.tostring(joints[0]))
+#need pointer to target and endeff##

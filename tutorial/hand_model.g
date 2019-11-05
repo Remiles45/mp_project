@@ -290,3 +290,7 @@ joint thumb_tip_bt (thumb_tip thumb_biotac_origin) {
   type=rigid  A=<T t(0.0005 0.00155 0.0155) E(0.0 -1.22129414408 0.0)>}
 joint grasp_object_allegro (grasp_object allegro_mount) {
   type=rigid  A=<T t(0 0 0.01) E(0 0 0)>}
+
+body target {  type=box size=[.03 .01 .02 .05] color=[0 .5 0] fixed, }
+
+shape endeff(thumb_tip){ type=marker  size=[.03 .01 .01 0] } # a marker shape at the tip of arm7
