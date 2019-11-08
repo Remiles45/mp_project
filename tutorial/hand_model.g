@@ -289,4 +289,26 @@ joint thumb_biotac_joint (thumb_biotac_nail thumb_biotac_tip) {
 joint thumb_tip_bt (thumb_tip thumb_biotac_origin) {
   type=rigid  A=<T t(0.0005 0.00155 0.0155) E(0.0 -1.22129414408 0.0)>}
 joint grasp_object_allegro (grasp_object allegro_mount) {
-  type=rigid  A=<T t(0 0 0.01) E(0 0 0)>}
+### type=rigid  A=<T t(0 0 0.01) E(0 0 0)>}
+  type=rigid  A=<T t(0 0 .88) E(1.57 0 0)>}
+
+### table
+frame table1{ shape:ssBox, X:<t(.8 0 .7)>, size:[2. 3. .2 .02], color:[.3 .3 .3] fixed, contact, logical:{ table } }
+
+### ball
+###frame redBall(table1) { Q:<t(0 0 .1) t(.1 .7 .03)> size:[.06 .06 .06 .02] color:[1 0 0] shape:ssBox contact, logical:{ object } }
+frame target(table1) { Q:<t(0 0 .1) t(-.7 0.1 .05)> size:[.006 .006 .006 .002] color:[1 0 0] shape:ssBox contact, logical:{ object } }
+frame target2(table1) { Q:<t(0 0 .1) t(-.7 0.1 .1)> size:[.006 .006 .006 .002] color:[1 0 0] shape:ssBox contact, logical:{ object } }
+frame target3(table1) { Q:<t(0 0 .1) t(-.7 0.1 .15)> size:[.006 .006 .006 .002] color:[1 0 0] shape:ssBox contact, logical:{ object } }
+frame target4(table1) { Q:<t(0 0 .1) t(-.7 0.05 .1)> size:[.006 .006 .006 .002] color:[1 0 0] shape:ssBox contact, logical:{ object } }
+
+### endeff
+shape endeff(thumb_tip){ type=5 rel=<T t(0 0 .01> size=[.01 .01 .01 0] } # trial
+shape endeff2(index_tip){ type=5 rel=<T t(0 0 .01> size=[.01 .01 .01 0] } # trial
+shape endeff3(middle_biotac_tip){ type=5 rel=<T t(0 0 .01> size=[.01 .01 .01 0] } # trial
+shape endeff4(ring_biotac_tip){ type=5 rel=<T t(0 0 .01> size=[.01 .01 .01 0] } # trial
+
+### target
+### body target{ Q=<T t(0 0 .89)> type=0 size=[.06 .06 .06 .02] color=[0 .5 0] fixed, }
+
+         
