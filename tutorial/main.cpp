@@ -16,7 +16,7 @@ void tutorialBasics(){
    * 3) the tasks */
 
   //-- setting the model; false -> NOT calling collision detection (SWIFT) -> faster
-  komo.setModel(G, false);
+  komo.setModel(G, true);
 
   //-- the timing parameters: 2 phases, 20 time slices, 5 seconds, k=2 (acceleration mode)
   komo.setTiming(2, 20, 5., 2);
@@ -31,14 +31,19 @@ void tutorialBasics(){
 
   //in phase-time [1,\infty] position-difference between "endeff" and "target" shall be zero (sumOfSqr objective)
   komo.setTask(1., -1., new TM_Default(TMT_posDiff, komo.world, "endeff", NoVector, "target", NoVector));
-
+  komo.setTask(1., -1., new TM_Default(TMT_posDiff, komo.world, "endeff2", NoVector, "target", NoVector));
+  //komo.setTask(1., -1., new TM_Default(TMT_posDiff, komo.world, "endeff3", NoVector, "target3", NoVector));
+  komo.setTask(1., -1., new TM_Default(TMT_posDiff, komo.world, "endeff4", NoVector, "target", NoVector));
+  //komo.setGrasp(1.0, "endeff2", "target");
   //in phase-time [1,\infty] quaternion-difference between "endeff" and "target" shall be zero (sumOfSqr objective)
-  komo.setTask(1., -1., new TM_Default(TMT_quatDiff, komo.world, "endeff", NoVector,
-                                            "target", NoVector));
+  //komo.setTask(1., -1., new TM_Default(TMT_quatDiff, komo.world, "endeff", NoVector, "target", NoVector));
+
   //I don't recomment setting quaternion tasks! This is only for testing here. Instead, use alignment tasks as in test/KOMO/komo
 
   //slow down around phase-time 1. (not measured in seconds, but phase)
-  komo.setSlowAround(1., .1, 1e3);
+  komo.setSlowAround(2., .1, 1e3);
+
+  komo.setCollisions(true);
 
   //-- call the optimizer
   komo.reset();
@@ -99,7 +104,9 @@ void tutorialInverseKinematics(){
   komo.run();
   //  komo.checkGradients(); //this checks all gradients of the problem by finite difference
   komo.getReport(); //true -> plot the cost curves
-  for(uint i=0;i<2;i++) komo.displayTrajectory(.1, true); //play the trajectory
+  for(uint i=0;i<2;i++){
+  komo.displayTrajectory(.1, true); //play the trajectory
+  }
 }
 
 //===========================================================================
