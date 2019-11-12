@@ -16,7 +16,7 @@ void tutorialBasics(){
    * 3) the tasks */
 
   //-- setting the model; false -> NOT calling collision detection (SWIFT) -> faster
-  komo.setModel(G, true);
+  komo.setModel(G, false);
 
   //-- the timing parameters: 2 phases, 20 time slices, 5 seconds, k=2 (acceleration mode)
   komo.setTiming(2, 20, 5., 2);
