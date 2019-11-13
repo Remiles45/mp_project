@@ -7,5 +7,4 @@ plot 'z.costReport' \
   ,'' u 0:4 w l lw 3 lc 4 lt 1 \
   ,'' u 0:5 w l lw 3 lc 5 lt 1 \
   ,'' u 0:6 w l lw 3 lc 6 lt 1 \
-  ,'' u 0:7 w l lw 3 lc 7 lt 1 \
 

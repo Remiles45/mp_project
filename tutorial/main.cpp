@@ -16,7 +16,7 @@ void tutorialBasics(){
    * 3) the tasks */
 
   //-- setting the model; false -> NOT calling collision detection (SWIFT) -> faster
-  komo.setModel(G, false);
+  komo.setModel(G, true);
 
   //-- the timing parameters: 2 phases, 20 time slices, 5 seconds, k=2 (acceleration mode)
   komo.setTiming(2, 20, 5., 2);
@@ -30,7 +30,7 @@ void tutorialBasics(){
   //-- simple tasks, called low-level
 
   //in phase-time [1,\infty] position-difference between "endeff" and "target" shall be zero (sumOfSqr objective)
-  komo.setTask(1., -1., new TM_Default(TMT_posDiff, komo.world, "endeff", NoVector, "target", NoVector));
+  //komo.setTask(1., -1., new TM_Default(TMT_posDiff, komo.world, "endeff", NoVector, "target", NoVector));
   komo.setTask(1., -1., new TM_Default(TMT_posDiff, komo.world, "endeff2", NoVector, "target", NoVector));
   //komo.setTask(1., -1., new TM_Default(TMT_posDiff, komo.world, "endeff3", NoVector, "target3", NoVector));
   komo.setTask(1., -1., new TM_Default(TMT_posDiff, komo.world, "endeff4", NoVector, "target", NoVector));
