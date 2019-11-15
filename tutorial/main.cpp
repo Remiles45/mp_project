@@ -7,7 +7,7 @@
 //===========================================================================
 
 void tutorialBasics(){
-  rai::KinematicWorld G("hand_model.g");
+  rai::KinematicWorld G("bare.g");
 
   KOMO komo;
   /* there are essentially three things that KOMO needs to be specified:

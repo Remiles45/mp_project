@@ -10,8 +10,8 @@ shape collision allegro_mount_0 (allegro_mount) {
 body palm_link {mass=0.4154 inertiaTensor=[1e-4 0 0 1e-4 0 1e-4] }
 shape visual palm_link_1 (palm_link) {
   rel=<T t(0 0 0 )>type=mesh mesh='../models/allegro_model/base_link_biotac.stl' colorName=Grey }
-##shape collision palm_link_0 (palm_link) {
-##   color=[.8 .2 .2 0.5], rel=<T t(-0.006 0 -0.035 )>type:ssBox size:[.038 .114 .057 0.01] contact }
+shape collision palm_link_0 (palm_link) {
+   color=[.8 .2 .2 0.5], rel=<T t(-0.006 0 -0.035 )>type:ssBox size:[.038 .114 .057 0.01] contact }
 
 ### INDEX FINGER
 body index_link_0 {mass=0.0119 inertiaTensor=[1.01666658333e-06 0.0 0.0 6.47677333333e-07 0.0 1.01666658333e-06] }
@@ -23,70 +23,70 @@ shape visual index_link_0_1 (index_link_0) {
 body index_link_1 {mass=0.065 inertiaTensor=[7.95654166667e-05 1.7199e-05 8.75875e-06 2.47088833333e-05 2.413125e-05 7.95654166667e-05] }
 shape visual index_link_1_1 (index_link_1) {
   type=mesh mesh='../models/allegro_model/link_1.0.stl'colorName=Grey }
-##shape collision index_link_1_0 (index_link_1) {
-##   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .02 0.004] contact }
+shape collision index_link_1_0 (index_link_1) {
+   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .02 0.004] contact }
 
 body index_link_2 {mass=0.0355 inertiaTensor=[2.63979183333e-05 6.67968e-06 4.783625e-06 1.34948516667e-05 9.372e-06 2.63979183333e-05] }
 shape visual index_link_2_1 (index_link_2) {
   type=mesh mesh='../models/allegro_model/link_2.0.stl'colorName=Black }
-##shape collision index_link_2_0 (index_link_2) {
-##   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .04 0.004] contact }
+shape collision index_link_2_0 (index_link_2) {
+   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .04 0.004] contact }
 
 body index_link_3 {mass=0.0096 inertiaTensor=[4.701248e-06 1.255968e-06 1.2936e-06 3.649312e-06 1.7622e-06 4.701248e-06] }
 shape visual index_link_3_1 (index_link_3) {
   type=mesh mesh='../models/allegro_model/link_3.0.stl'colorName=Black }
-##shape collision index_link_3_0 (index_link_3) {
-###   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .03 0.004] contact }
+shape collision index_link_3_0 (index_link_3) {
+   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .03 0.004] contact }
 
 ### MIDDLE FINGER
 body middle_link_0 {mass=0.0119 inertiaTensor=[1.01666658333e-06 0.0 0.0 6.47677333333e-07 0.0 1.01666658333e-06] }
 shape visual middle_link_0_1 (middle_link_0) {
   type=mesh mesh='../models/allegro_model/link_0.0.stl'colorName=Black }
-##shape collision middle_link_0_0 (middle_link_0) {
-##   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .005 0.0001] contact }
+shape collision middle_link_0_0 (middle_link_0) {
+   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .005 0.0001] contact }
 
 body middle_link_1 {mass=0.065 inertiaTensor=[7.95654166667e-05 1.7199e-05 8.75875e-06 2.47088833333e-05 2.413125e-05 7.95654166667e-05] }
 shape visual middle_link_1_1 (middle_link_1) {
   type=mesh mesh='../models/allegro_model/link_1.0.stl'colorName=Black }
-##shape collision middle_link_1_0 (middle_link_1) {
-##   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .02 0.004] contact }
+shape collision middle_link_1_0 (middle_link_1) {
+   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .02 0.004] contact }
 
 body middle_link_2 {mass=0.0355 inertiaTensor=[2.63979183333e-05 6.67968e-06 4.783625e-06 1.34948516667e-05 9.372e-06 2.63979183333e-05] }
 shape visual middle_link_2_1 (middle_link_2) {
   type=mesh mesh='../models/allegro_model/link_2.0.stl'colorName=Black }
-##shape collision middle_link_2_0 (middle_link_2) {
-##   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .04 0.004] contact }
+shape collision middle_link_2_0 (middle_link_2) {
+   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .04 0.004] contact }
 
 body middle_link_3 {mass=0.0096 inertiaTensor=[4.701248e-06 1.255968e-06 1.2936e-06 3.649312e-06 1.7622e-06 4.701248e-06] }
 shape visual middle_link_3_1 (middle_link_3) {
   type=mesh mesh='../models/allegro_model/link_3.0.stl'colorName=Black }
-##shape collision middle_link_3_0 (middle_link_3) {
-##   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .03 0.004] contact }
+shape collision middle_link_3_0 (middle_link_3) {
+   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .03 0.004] contact }
 
 ### RING FINGER
 body ring_link_0 {mass=0.0119 inertiaTensor=[1.01666658333e-06 0.0 0.0 6.47677333333e-07 0.0 1.01666658333e-06] }
 shape visual ring_link_0_1 (ring_link_0) {
   type=mesh mesh='../models/allegro_model/link_0.0.stl'colorName=Black }
-##shape collision ring_link_0_0 (ring_link_0) {
-##   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .005 0.0001] contact }
+shape collision ring_link_0_0 (ring_link_0) {
+   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .005 0.0001] contact }
 
 body ring_link_1 {mass=0.065 inertiaTensor=[7.95654166667e-05 1.7199e-05 8.75875e-06 2.47088833333e-05 2.413125e-05 7.95654166667e-05] }
 shape visual ring_link_1_1 (ring_link_1) {
   type=mesh mesh='../models/allegro_model/link_1.0.stl'colorName=Black }
-##shape collision ring_link_1_0 (ring_link_1) {
-##   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .02 0.004] contact }
+shape collision ring_link_1_0 (ring_link_1) {
+   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .02 0.004] contact }
 
 body ring_link_2 {mass=0.0355 inertiaTensor=[2.63979183333e-05 6.67968e-06 4.783625e-06 1.34948516667e-05 9.372e-06 2.63979183333e-05] }
 shape visual ring_link_2_1 (ring_link_2) {
   type=mesh mesh='../models/allegro_model/link_2.0.stl'colorName=Black }
-##shape collision ring_link_2_0 (ring_link_2) {
-##   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .04 0.004] contact }
+shape collision ring_link_2_0 (ring_link_2) {
+   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .04 0.004] contact }
 
 body ring_link_3 {mass=0.0096 inertiaTensor=[4.701248e-06 1.255968e-06 1.2936e-06 3.649312e-06 1.7622e-06 4.701248e-06] }
 shape visual ring_link_3_1 (ring_link_3) {
   type=mesh mesh='../models/allegro_model/link_3.0.stl'colorName=Black }
-##shape collision ring_link_3_0 (ring_link_3) {
-##   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .03 0.004] contact }
+shape collision ring_link_3_0 (ring_link_3) {
+   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .03 0.004] contact }
 
 ### THUMB
 body thumb_link_0 {mass=0.0176 inertiaTensor=[1.89273333333e-5 7.16716e-06 5.35568e-06 1.43008213333e-05 6.8068e-06 1.89273333333e-05] }
@@ -98,14 +98,14 @@ shape visual thumb_link_0_1 (thumb_link_0) {
 body thumb_link_1 {mass=0.0119 inertiaTensor=[4.24250866667e-06 1.032087e-06 1.603525e-06 4.52362633333e-06 1.44808125e-06 4.24250866667e-06] }
 shape visual thumb_link_1_1 (thumb_link_1) {
   type=mesh mesh='../models/allegro_model/link_13.0.stl'colorName=Black }
-##shape collision thumb_link_1_0 (thumb_link_1) {
-##   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .005 0.0001] contact }
+shape collision thumb_link_1_0 (thumb_link_1) {
+   color=[.8 .2 .2 0.5], type:ssBox size:[.02 .03 .005 0.0001] contact }
 
 body thumb_link_2 {mass=0.038 inertiaTensor=[4.30439933333e-05 9.57068e-06 5.1205e-06 1.44451933333e-05 1.342825e-05 4.30439933333e-05] }
 shape visual thumb_link_2_1 (thumb_link_2) {
   type=mesh mesh='../models/allegro_model/link_14.0.stl'colorName=Black }
-##shape collision thumb_link_2_0 (thumb_link_2) {
-##   color=[.2 .2 .8 0.5], type:ssBox size:[.02 .03 .02 0.004] contact }
+shape collision thumb_link_2_0 (thumb_link_2) {
+   color=[.2 .2 .8 0.5], type:ssBox size:[.02 .03 .02 0.004] contact }
 
 body thumb_link_3 {mass=0.0388 inertiaTensor=[3.29223173333e-05 8.042076e-06 5.2283e-06 1.47493026667e-5 1.1283525e-5 3.29223173333e-05] }
 shape visual thumb_link_3_1 (thumb_link_3) {
