@@ -71,7 +71,7 @@ for link in links:
     # collision shape
     for collision in link.findall("collision"):
         gfile.write ('shape collision %s_0 (%s) {\n  ' % (name, name),)
-        gfile.write (' color=[.8 .2 .2 .5], ',)
+        gfile.write (' color=[.8 .2 .2 0], ',)
         writeShape(collision)
         gfile.write (' contact }\n',) # end of shape
 
