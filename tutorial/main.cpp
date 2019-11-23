@@ -4,11 +4,16 @@
 #include <Kin/taskMaps.h>
 
 
+
+#include <Kin/TM_ContactConstraints.h>
+#include <Kin/TM_time.h>
+#include <Kin/TM_default.h>
+
 //===========================================================================
 
 void tutorialBasics(){
-  rai::KinematicWorld G("bare.g");
-
+  rai::KinematicWorld K("marshmallow.g");
+  // K.addTimeJoint()
   KOMO komo;
   /* there are essentially three things that KOMO needs to be specified:
    * 1) the kinematic model
@@ -16,40 +21,58 @@ void tutorialBasics(){
    * 3) the tasks */
 
   //-- setting the model; false -> NOT calling collision detection (SWIFT) -> faster
-  komo.setModel(G, true);
-
+  komo.setModel(K,true);
+  komo.setPathOpt(1., 100, 5.);
   //-- the timing parameters: 2 phases, 20 time slices, 5 seconds, k=2 (acceleration mode)
   komo.setTiming(2, 20, 5., 2);
 
   //-- default tasks for transition costs
 //  komo.setFixEffectiveJoints(); //only relevant when there are kinematic switches
 //  komo.setFixSwitchedObjects(); //only relevant when there are kinematic switches
-  komo.setSquaredQAccelerations();
-  komo.setSquaredQuaternionNorms(-1., -1., 1e3); //when the kinematics includes quaternion joints, keep them roughly regularized
+  // komo.setSquaredQAccelerations();
+  // komo.setSquaredQuaternionNorms(-1., -1., 1e3); //when the kinematics includes quaternion joints, keep them roughly regularized
 
   //-- simple tasks, called low-level
 
   //in phase-time [1,\infty] position-difference between "endeff" and "target" shall be zero (sumOfSqr objective)
   //komo.setTask(1., -1., new TM_Default(TMT_posDiff, komo.world, "endeff", NoVector, "target", NoVector));
-  komo.setTask(1., -1., new TM_Default(TMT_posDiff, komo.world, "endeff2", NoVector, "target", NoVector));
+  // komo.setTask(1., -1., new TM_Default(TMT_posDiff, komo.world, "endeff2", NoVector, "target", NoVector));
   //komo.setTask(1., -1., new TM_Default(TMT_posDiff, komo.world, "endeff3", NoVector, "target3", NoVector));
-  komo.setTask(1., -1., new TM_Default(TMT_posDiff, komo.world, "endeff4", NoVector, "target", NoVector));
+  //// komo.setTask(1., -1., new TM_Default(TMT_posDiff, komo.world, "endeff4", NoVector, "target", NoVector));
   //komo.setGrasp(1.0, "endeff2", "target");
   //in phase-time [1,\infty] quaternion-difference between "endeff" and "target" shall be zero (sumOfSqr objective)
   //komo.setTask(1., -1., new TM_Default(TMT_quatDiff, komo.world, "endeff", NoVector, "target", NoVector));
 
-  //I don't recomment setting quaternion tasks! This is only for testing here. Instead, use alignment tasks as in test/KOMO/komo
 
+    komo.setTask(-1., -1., new TM_Time(), OT_sos, {}, 1e2, 1); //smooth time evolution
+    komo.setTask(-1., -1., new TM_Time(), OT_sos, {komo.tau}, 1e1, 0); //prior on timing
+
+    komo.setPosition(1., 1., "endeff" , "target4", OT_sos);
+    komo.setPosition(1., 1., "endeff2", "target", OT_sos);
+    komo.setPosition(1., 1., "endeff3", "target2", OT_sos);
+    komo.setPosition(1., 1., "endeff4", "target3", OT_sos);
+  //
+  // komo.setPosition(1., 1., "endeff2", "target");
+  // komo.setPosition(1., 1., "endeff4", "target");
+
+  //I don't recomment setting quaternion tasks! This is only for testing here. Instead, use alignment tasks as in test/KOMO/komo
+  // komo.setTask(-1., -1., new TM_Time(), OT_sos, {}, 1e2, 1); //smooth time evolution
+  // komo.setTask(-1., -1., new TM_Time(), OT_sos, {komo.tau}, 1e1, 0); //prior on timing
+  //
+  // komo.setPosition(1., 1., "endeff", "target", OT_sos);
   //slow down around phase-time 1. (not measured in seconds, but phase)
   komo.setSlowAround(2., .1, 1e3);
 
   komo.setCollisions(true);
-
+  komo.reportProblem();
   //-- call the optimizer
   komo.reset();
   komo.run();
+
   //  komo.checkGradients(); //this checks all gradients of the problem by finite difference
   komo.getReport(true); //true -> plot the cost curves
+  komo.setModel(K,false);
+  komo.plotTrajectory();
   for(uint i=0;i<2;i++) komo.displayTrajectory(.1, true); //play the trajectory
 
   /* next step:
@@ -115,7 +138,7 @@ int main(int argc,char** argv){
   rai::initCmdLine(argc,argv);
   tutorialBasics();
 
-  tutorialInverseKinematics();
+  //tutorialInverseKinematics();
 
   return 0;
 }
