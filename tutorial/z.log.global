@@ -3,68 +3,53 @@
 util.cpp:initCmdLine:675(1) ** cmd line arguments: './x.exe '
 util.cpp:getIs:1132(3) opening input file `hand_model.g'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/allegro_mount.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/allegro_mount.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/base_link_biotac.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/base_link_biotac.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_0.0.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/link_0.0.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_1.0.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/link_1.0.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_2.0.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/link_2.0.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_3.0.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/link_3.0.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_0.0.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/link_0.0.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_1.0.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/link_1.0.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_2.0.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/link_2.0.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_3.0.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/link_3.0.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_0.0.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/link_0.0.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_1.0.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/link_1.0.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_2.0.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/link_2.0.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_3.0.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/link_3.0.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_12.0_right.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/link_12.0_right.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_13.0.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/link_13.0.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_14.0.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/link_14.0.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/link_15.0.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/link_15.0.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/biotac/base_visual.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/biotac/contact_visual.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/biotac/nail_visual.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/biotac/contact_visual.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/biotac/contact_visual.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/biotac/contact_visual.stl'
 
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/biotac/base_visual.stl'
-
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/biotac/nail_visual.stl'
-
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/biotac/contact_visual.stl'
-
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/biotac/base_visual.stl'
-
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/biotac/nail_visual.stl'
-
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/biotac/contact_visual.stl'
-
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/biotac/base_visual.stl'
-
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/biotac/nail_visual.stl'
-
-util.cpp:getIs:1132(3) opening input file `../models/allegro_model/biotac/contact_visual.stl'
+util.cpp:getIs:1132(3) opening input file `../models/scaledUp/biotac/contact_visual.stl'
 
 graph.cpp:RegistryInitializer:1142(3) opening config file 'rai.cfg'
 util.tpp:getParameterBase:65(3)         KOMO/verbose =     1 [i] (default!)
+util.tpp:getParameterBase:65(3) FlagConstraints/gravity =     1 [d] (default!)
 util.tpp:getParameterBase:65(3) Motion/TaskMapTransition/posCoeff =     0 [d] (default!)
 util.tpp:getParameterBase:65(3) Motion/TaskMapTransition/velCoeff =     0 [d] (default!)
 util.tpp:getParameterBase:65(3) Motion/TaskMapTransition/accCoeff =     1 [d] (default!)
@@ -73,10 +58,10 @@ util.tpp:getParameterBase:65(3)          swiftCutoff =  0.11 [d] (default!)
 util.tpp:getParameterBase:65(3)                 seed =     0 [j] (default!)
 util.tpp:getParameterBase:42(3)          opt/verbose =     1 [j] (graph!)
 util.tpp:getParameterBase:65(3)    opt/stopTolerance =  0.01 [d] (default!)
-util.tpp:getParameterBase:65(3)   opt/stopFTolerance =   0.1 [d] (default!)
-util.tpp:getParameterBase:65(3)   opt/stopGTolerance =    -1 [d] (default!)
+util.tpp:getParameterBase:65(3)   opt/stopFTolerance =  0.01 [d] (default!)
+util.tpp:getParameterBase:65(3)   opt/stopGTolerance =  0.01 [d] (default!)
 util.tpp:getParameterBase:65(3)        opt/stopEvals =  1000 [j] (default!)
-util.tpp:getParameterBase:65(3)        opt/stopIters =  1000 [j] (default!)
+util.tpp:getParameterBase:65(3)        opt/stopIters = 10000 [j] (default!)
 util.tpp:getParameterBase:65(3)       opt/stopOuters =  1000 [j] (default!)
 util.tpp:getParameterBase:65(3)    opt/stopLineSteps =    10 [j] (default!)
 util.tpp:getParameterBase:65(3)    opt/stopTinySteps =    10 [j] (default!)
@@ -84,8 +69,8 @@ util.tpp:getParameterBase:65(3)         opt/initStep =     1 [d] (default!)
 util.tpp:getParameterBase:65(3)          opt/minStep =    -1 [d] (default!)
 util.tpp:getParameterBase:42(3)          opt/maxStep =   0.3 [d] (graph!)
 util.tpp:getParameterBase:65(3)          opt/damping =   0.1 [d] (default!)
-util.tpp:getParameterBase:65(3)          opt/stepInc =     2 [d] (default!)
-util.tpp:getParameterBase:65(3)          opt/stepDec =   0.1 [d] (default!)
+util.tpp:getParameterBase:65(3)          opt/stepInc =   1.5 [d] (default!)
+util.tpp:getParameterBase:65(3)          opt/stepDec =   0.5 [d] (default!)
 util.tpp:getParameterBase:65(3)       opt/dampingInc =     2 [d] (default!)
 util.tpp:getParameterBase:65(3)       opt/dampingDec =   0.5 [d] (default!)
 util.tpp:getParameterBase:65(3)            opt/wolfe =  0.01 [d] (default!)
@@ -97,3 +82,7 @@ util.tpp:getParameterBase:65(3)         opt/muLBInit =     1 [d] (default!)
 util.tpp:getParameterBase:42(3)        opt/aulaMuInc =     2 [d] (graph!)
 util.cpp:getOs:1120(3) opening output file `z.plotcmd'
 
+util.cpp:getOs:1120(3) opening output file `z.plotcmd'
+
+opengl.cpp:Draw:1576(-1) OpenGL name stack has not depth 1 (pushs>pops) in DRAW mode:0
+util.cpp:~Mutex:1315(-2) CHECK failed: '!state' Mutex destroyed without unlocking first
